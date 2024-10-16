@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTT Platform</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Tahoma (sans-seriaf);
+            background-color: #1f1f1f;
+            color: #fff;
+        }
+
+        header {
+            background-color: #DC143C;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #0931e5;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #e50914;
+        }
+
+        .content-item {
+            margin-bottom: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            justify-content: space-between;
+        }
+
+        .content-item img {
+            width: 10%;
+            height:auto;
+            
+        }
+
+        footer {
+            background-color: RED;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            color: #8e8e8e;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+         MOVIES ROOM
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">Series</a>
+        <a href="#">My List</a>
+        <a href="#">Favourite</a>
+        
+    </nav>
+ <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" id="login-button" onclick="authenticateUser()">Login</button>
+        </form>
+
+    <!-- Main Content Section -->
+    <main>
+<form id="search-form">
+        <input type="text" id="search-bar" placeholder="Search for movies, series, etc.">
+        <button type="button" id="search-button" onclick="searchContent()">Search</button>
+        
+    </form>
+        <!-- Featured Section -->
+        <section>
+            <h2>Featured Content</h2>
+            <div class="content-item">
+                <img src="C:\Users\KLE BCA\Pictures\MV5BZjJmMjJmYWMtNTQyYy00NzcxLWE5N2EtMTY5NjRhMGZmYjNlXkEyXkFqcGc@._V1_.jpg" alt="Featured Content"><p>PUSHPA-2</p>
+                <img src="C:\Users\KLE BCA\Pictures\MV5BZDMyYWU4NzItZDY0MC00ODE2LTkyYTMtMzNkNDdmYmFhZDg0XkEyXkFqcGc@._V1_.jpg" alt="Featured Content"><P>VENOM-3</P>
+                <img src="C:\Users\KLE BCA\Pictures\MV5BYTA5NzVjYTktOTJjOC00NWFiLWI2ZGEtZmFmNzU1MzNiYmEwXkEyXkFqcGc@._V1_.jpg" alt="Featured Content"><P>TOXIC</P>
+                <!-- Additional details or buttons can be added here -->
+            </div>
+        </section>
+
+        <!-- Trending Section -->
+        <section>
+            <h2>Trending Now</h2>
+            <div class="content-item">
+                <img src="C:\Users\KLE BCA\Pictures\images.jpg" alt="Trending Movie">
+                <img src="C:\Users\KLE BCA\Pictures\double-ismart-01.jpg" alt="Trending Movie">
+                <img src="C:\Users\KLE BCA\Pictures\images.jpg" alt="Trending Movie">
+                <img src="C:\Users\KLE BCA\Pictures\MV5BN2IwOTZjNDYtMGI4Ny00NTEyLTg4YmEtMmE0ZjcxOGU5NmEwXkEyXkFqcGc@._V1_.jpg" alt="Trending Movie">
+                <!-- Additional details or buttons can be added here -->
+            </div>
+            <!-- Add more trending content items as needed -->
+        </section>
+
+        <!-- Recommended Section -->
+        <section>
+            <h2>Recommended for You</h2>
+            <div class="content-item">
+                <img src="C:\Users\KLE BCA\Pictures\ab67616d00001e02ce810caf54b447403288923b.jpg" alt="Recommended Series">
+                <img src="C:\Users\KLE BCA\Pictures\305a4911b39e43efd7aba1646e055503.jpg" alt="Recommended Series">
+                <img src="C:\Users\KLE BCA\Pictures\images (2).jpg" alt="Recommended Series">
+
+                 <!-- Additional details or buttons can be added here -->
+            </div>
+            <!-- Add more recommended content items as needed -->
+        </section>
+
+    </main>
+</body>
+</html>
